@@ -24,7 +24,7 @@ class WeatherCard extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 3),
       child: Container(
         height: 160,
-        width: 70,
+        width: 60,
 
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(40),
