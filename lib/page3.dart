@@ -169,10 +169,23 @@ class Page3 extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Container(
-                      height: 120,
-                      width: 120,
+                      height: 125,
+                      width: 125,
                       decoration: BoxDecoration(
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.black.withOpacity(0.3), // black with opacity
+                              offset: Offset(0, 4), // no horizontal shift, 4 down
+                              blurRadius: 6,        // how soft the shadow is
+                              spreadRadius: 0,      // no spread
+                            ),
+                          ],
+                        border: Border.all(
+                          color: Color(0xFFF7CBFD), // Border color
+                          width: 1.0, // Border width
+                        ),
                         borderRadius: BorderRadius.circular(15),
+
                         gradient: LinearGradient(
                           colors: [
                             Color(0xFF3E2D8F),
@@ -243,18 +256,29 @@ class Page3 extends StatelessWidget {
                               ),
                             ),
                           ),
-
-
-
-
                         ],
                       ),
                     ),
                     SizedBox(width: 10),
                     Container(
-                      height: 120,
-                      width: 120,
+                      height: 125,
+                      width: 125,
                       decoration: BoxDecoration(
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(0.3),
+                            // black with opacity
+                            offset: Offset(0, 4),
+                            // no horizontal shift, 4 down
+                            blurRadius: 6,
+                            // how soft the shadow is
+                            spreadRadius: 0, // no spread
+                          ),
+                        ],
+                        border: Border.all(
+                          color: Color(0xFFF7CBFD), // Border color
+                          width: 1.0, // Border width
+                        ),
                         borderRadius: BorderRadius.circular(15),
                         gradient: LinearGradient(
                           colors: [
