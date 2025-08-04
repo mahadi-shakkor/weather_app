@@ -121,7 +121,44 @@ class Page3 extends StatelessWidget {
                         ),
                       ),
                     ),
+
+
+                    Padding(
+                      padding: const EdgeInsets.all(10.0),
+                      child: Container(
+                        height: 20  ,
+                        width: MediaQuery.of(context).size.width,
+                        child: Row(
+
+                          children: [
+
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                            child: Align(
+                              alignment: Alignment.centerLeft,
+                              child: Text(
+                                "See more",
+                                style: GoogleFonts.poppins(
+                                  fontSize: 14,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
+                            ),
+                          ),
+                          SizedBox(width: 145),
+                          Icon(
+                            Icons.arrow_forward_ios,
+                            size: 20, // Match the design
+                            color: Colors.white,
+                          ),
+
+                        ],),
+                      ),
+                    )
                   ],
+
+
                 ),
               ),
             ),
