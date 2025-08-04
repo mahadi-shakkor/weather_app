@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:weather_app/page3.dart';
 import 'package:weather_app/plash_sceen.dart';
 import 'package:weather_app/todays_weather.dart';
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: Todays_weather(),
+      home: Page3(),
     );
   }
 }

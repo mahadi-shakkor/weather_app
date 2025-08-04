@@ -62,8 +62,6 @@ class splash_sceen extends StatelessWidget {
               ),
             ),
           ),
-
-
         ],
       ),
     );

@@ -103,7 +103,6 @@ class Todays_weather extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-
                       HeightLowestweather(
                         hightWaether: '19°',
                         time: "15:20",
@@ -124,11 +123,8 @@ class Todays_weather extends StatelessWidget {
                         time: "15:20",
                         image: "assets/images/s3.png",
                       ),
-
                     ],
                   ),
-
-
                 ],
               ),
             ),
