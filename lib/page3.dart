@@ -182,8 +182,75 @@ class Page3 extends StatelessWidget {
                           end: Alignment.bottomLeft,
                         ),
                       ),
+                      child: Column(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(10.0),
+                            child: Row(
+                              children: [
+                                Icon(
+                                  Icons.wb_sunny,
+                                  size: 30,
+                                  color: Colors.white,
+                                ),
+                                SizedBox(width: 10),
+
+                                Text(
+                                  "SUNRISE",
+                                  style: GoogleFonts.poppins(
+                                    fontSize: 13,
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w500,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 10.0,
+                            ),
+                            child: Container(
+                              child: Align(
+                                alignment: Alignment.centerLeft,
+                                child: Text(
+                                  "5:28 AM",
+                                  style: GoogleFonts.poppins(
+                                    fontSize: 24,
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w500,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+
+                          Padding(
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 10.0,
+                            ),
+                            child: Container(
+                              child: Align(
+                                alignment: Alignment.centerLeft,
+                                child: Text(
+                                  "Sunset: 7.25PM",
+                                  style: GoogleFonts.poppins(
+                                    fontSize: 12,
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w400,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+
+
+
+
+                        ],
+                      ),
                     ),
-                    SizedBox(width: 10,),
+                    SizedBox(width: 10),
                     Container(
                       height: 120,
                       width: 120,
@@ -198,30 +265,67 @@ class Page3 extends StatelessWidget {
                           end: Alignment.bottomLeft,
                         ),
                       ),
-                      child: Column(children: [
+                      child: Column(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(10.0),
+                            child: Row(
+                              children: [
+                                Icon(
+                                  Icons.wb_sunny,
+                                  size: 30,
+                                  color: Colors.white,
+                                ),
+                                SizedBox(width: 10),
 
-                        Padding(
-                          padding: const EdgeInsets.all(10.0),
-                          child: Row(children: [
-                            Icon(Icons.wb_sunny,size: 30, color: Colors.white),
-                            SizedBox(width: 10,),
-
-                            Text(
-                              "UV INDEX",
-                              style: GoogleFonts.poppins(
-                                fontSize: 13,
-                                color: Colors.white,
-                                fontWeight: FontWeight.w300,
+                                Text(
+                                  "UV INDEX",
+                                  style: GoogleFonts.poppins(
+                                    fontSize: 13,
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w400,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 10.0,
+                            ),
+                            child: Container(
+                              child: Align(
+                                alignment: Alignment.centerLeft,
+                                child: Text(
+                                  "4",
+                                  style: GoogleFonts.poppins(
+                                    fontSize: 24,
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w500,
+                                  ),
+                                ),
                               ),
                             ),
-
-
-                          ],),
-                        )
-
-
-                      ],
-
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 10.0,
+                            ),
+                            child: Container(
+                              child: Align(
+                                alignment: Alignment.centerLeft,
+                                child: Text(
+                                  "Moderate",
+                                  style: GoogleFonts.poppins(
+                                    fontSize: 19,
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ],
