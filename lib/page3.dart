@@ -172,7 +172,7 @@ class Page3 extends StatelessWidget {
                       height: 120,
                       width: 120,
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(9),
+                        borderRadius: BorderRadius.circular(15),
                         gradient: LinearGradient(
                           colors: [
                             Color(0xFF3E2D8F),
@@ -255,7 +255,7 @@ class Page3 extends StatelessWidget {
                       height: 120,
                       width: 120,
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(9),
+                        borderRadius: BorderRadius.circular(15),
                         gradient: LinearGradient(
                           colors: [
                             Color(0xFF3E2D8F),
