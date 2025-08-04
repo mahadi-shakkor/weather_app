@@ -122,46 +122,114 @@ class Page3 extends StatelessWidget {
                       ),
                     ),
 
-
                     Padding(
                       padding: const EdgeInsets.all(10.0),
                       child: Container(
-                        height: 20  ,
+                        height: 20,
                         width: MediaQuery.of(context).size.width,
                         child: Row(
-
                           children: [
-
-                          Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                            child: Align(
-                              alignment: Alignment.centerLeft,
-                              child: Text(
-                                "See more",
-                                style: GoogleFonts.poppins(
-                                  fontSize: 14,
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.w600,
+                            Padding(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 8.0,
+                              ),
+                              child: Align(
+                                alignment: Alignment.centerLeft,
+                                child: Text(
+                                  "See more",
+                                  style: GoogleFonts.poppins(
+                                    fontSize: 14,
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w600,
+                                  ),
                                 ),
                               ),
                             ),
-                          ),
-                          SizedBox(width: 145),
-                          Icon(
-                            Icons.arrow_forward_ios,
-                            size: 20, // Match the design
-                            color: Colors.white,
-                          ),
-
-                        ],),
+                            SizedBox(width: 145),
+                            Icon(
+                              Icons.arrow_forward_ios,
+                              size: 20, // Match the design
+                              color: Colors.white,
+                            ),
+                          ],
+                        ),
                       ),
-                    )
+                    ),
                   ],
-
-
                 ),
               ),
             ),
+            SizedBox(height: 29),
+            Container(
+              height: 120,
+
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 40.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Container(
+                      height: 120,
+                      width: 120,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(9),
+                        gradient: LinearGradient(
+                          colors: [
+                            Color(0xFF3E2D8F),
+                            Color(0xFF9D52AC).withOpacity(.7),
+                          ],
+                          begin: Alignment.topRight,
+                          end: Alignment.bottomLeft,
+                        ),
+                      ),
+                    ),
+                    SizedBox(width: 10,),
+                    Container(
+                      height: 120,
+                      width: 120,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(9),
+                        gradient: LinearGradient(
+                          colors: [
+                            Color(0xFF3E2D8F),
+                            Color(0xFF9D52AC).withOpacity(.7),
+                          ],
+                          begin: Alignment.topRight,
+                          end: Alignment.bottomLeft,
+                        ),
+                      ),
+                      child: Column(children: [
+
+                        Padding(
+                          padding: const EdgeInsets.all(10.0),
+                          child: Row(children: [
+                            Icon(Icons.wb_sunny,size: 30, color: Colors.white),
+                            SizedBox(width: 10,),
+
+                            Text(
+                              "UV INDEX",
+                              style: GoogleFonts.poppins(
+                                fontSize: 13,
+                                color: Colors.white,
+                                fontWeight: FontWeight.w300,
+                              ),
+                            ),
+
+
+                          ],),
+                        )
+
+
+                      ],
+
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+
+            SizedBox(height: 29),
           ],
         ),
       ),
