@@ -34,7 +34,7 @@ class Page3 extends StatelessWidget {
             SizedBox(height: 30),
             // Wrap your Align widget with a Padding widget
             Padding(
-              padding: const EdgeInsets.only(left: 40.0), // Adds 20 pixels of
+              padding: const EdgeInsets.only(left: 60.0), // Adds 20 pixels of
               // space on the left
               child: Align(
                 alignment: Alignment.centerLeft,
@@ -48,8 +48,83 @@ class Page3 extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 13),
             WeatherForecastScroller(),
 
+            SizedBox(height: 25),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 40),
+              child: Container(
+                height: 150,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(9),
+                  gradient: LinearGradient(
+                    colors: [
+                      Color(0xFF3E2D8F),
+                      Color(0xFF9D52AC).withOpacity(.7),
+                    ],
+                    begin: Alignment.topRight,
+                    end: Alignment.bottomLeft,
+                  ),
+                ),
+                child: Column(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(15.0),
+                      child: Row(
+                        children: [
+                          Icon(Icons.my_location, color: Colors.white),
+                          SizedBox(width: 10),
+                          Text(
+                            "AIR QUALITY",
+                            style: GoogleFonts.poppins(
+                              fontSize: 15,
+                              color: Colors.white,
+                              fontWeight: FontWeight.w300,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                      child: Container(
+                        child: Align(
+                          alignment: Alignment.centerLeft,
+                          child: Text(
+                            "3-Low Health Risk",
+                            style: GoogleFonts.poppins(
+                              fontSize: 24,
+                              color: Colors.white,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+
+                    SizedBox(height: 10),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 15.0),
+                      child: Container(
+                        height: 4,
+                        width: double.infinity,
+                        decoration: BoxDecoration(
+                          gradient: LinearGradient(
+                            colors: [
+                              Color(0xFF3E2D8F),
+                              Color(0xFF6A7FCB).withOpacity(0.7),
+                            ],
+                            begin: Alignment.topRight,
+                            end: Alignment.bottomLeft,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
           ],
         ),
       ),

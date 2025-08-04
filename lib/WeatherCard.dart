@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -12,8 +14,9 @@ class WeatherCard extends StatelessWidget {
     required this.temperature,
     required this.day,
     required this.imagePath,
-    this.gradientColors = const [Color(0xFF3E2D8F), Color(0xFF9D52AC)],
+    required this.gradientColors,
   }) : super(key: key);
+
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +29,7 @@ class WeatherCard extends StatelessWidget {
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(40),
           gradient: LinearGradient(
-            colors: gradientColors,
+            colors:gradientColors,
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
           ),

@@ -17,31 +17,31 @@ class _WeatherForecastScrollerState extends State<WeatherForecastScroller> {
       "temp": "19°C",
       "day": "Mon",
       "img": "assets/images/s3.png",
-      "gradient": [Color(0xFF9D52AC), Color(0xFF3E2D8F)],
+      "gradient": [Color(0xFF3E2D8F), Color(0xFF9D52AC).withOpacity(1)],
     },
     {
       "temp": "18°C",
       "day": "Tue",
       "img": "assets/images/s2.png",
-      "gradient": [Color(0xFF6A6AF6), Color(0xFF5243AA)],
+      "gradient": [Color(0xFF3E2D8F), Color(0xFF6A7FCB).withOpacity(0.7)],
     },
     {
       "temp": "18°C",
       "day": "Wed",
       "img": "assets/images/s2.png",
-      "gradient": [Color(0xFF5243AA), Color(0xFF3A3F97)],
+      "gradient": [Color(0xFF3E2D8F), Color(0xFF6A7FCB).withOpacity(0.7)],
     },
     {
       "temp": "19°C",
       "day": "Thu",
       "img": "assets/images/s3.png",
-      "gradient": [Color(0xFF8F3E9C), Color(0xFF6E2CA5)],
+      "gradient":[Color(0xFF3E2D8F), Color(0xFF6A7FCB).withOpacity(0.7)],
     },
     {
       "temp": "20°C",
       "day": "Fri",
       "img": "assets/images/s3.png",
-      "gradient": [Color(0xFF3E2D8F), Color(0xFF9D52AC)],
+      "gradient": [Color(0xFF3E2D8F), Color(0xFF6A7FCB).withOpacity(0.7)],
     },
   ];
 
@@ -79,6 +79,7 @@ class _WeatherForecastScrollerState extends State<WeatherForecastScroller> {
                 icon: const Icon(Icons.arrow_back_ios, color: Colors.white),
               ),
               Expanded(
+
                 child: SizedBox(
                   height: 160,
 
@@ -91,8 +92,8 @@ class _WeatherForecastScrollerState extends State<WeatherForecastScroller> {
                       return WeatherCard(
                         temperature: item['temp'],
                         day: item['day'],
-                        imagePath: item['img'],
-                          gradientColors:item['gradient']
+                        imagePath: item['img'], gradientColors: item['gradient'],
+
 
                       );
                     },
